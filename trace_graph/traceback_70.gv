@@ -1,0 +1,41 @@
+// Log Traceback Loop
+digraph {
+	3724 -> 8880
+	node [color=red]
+	13380 -> 3724
+	node [color=black]
+	node [color=red]
+	8880 -> 13772
+	node [color=red]
+	8880 -> 3664
+	node [color=red]
+	3664 -> 10624
+	node [color=red]
+	13772 -> 8936
+	node [color=red]
+	8936 -> 3876
+	node [color=red]
+	3876 -> 11044
+	node [color=red]
+	3876 -> 11848
+	node [color=red]
+	3876 -> 11632
+	node [color=red]
+	11044 -> 9976
+	node [color=red]
+	11044 -> 11956
+	node [color=red]
+	9976 -> 8652
+	node [color=red]
+	8652 -> 5432
+	node [color=red]
+	8652 -> 7524
+	node [color=red]
+	7524 -> 10904
+	node [color=red]
+	7524 -> 1892
+	node [color=red]
+	7524 -> 10628
+	node [color=red]
+	7524 -> 10320
+}

@@ -1,0 +1,9 @@
+// Log Traceback Loop
+digraph {
+	node [color=red]
+	6704 -> 2208
+	node [color=black]
+	2208 -> 14780
+	node [color=black]
+	2208 -> 14276
+}
