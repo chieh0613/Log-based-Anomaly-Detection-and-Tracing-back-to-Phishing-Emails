@@ -1,4 +1,4 @@
-# Log-based-Anomaly-Detection-and-Tracing-back-to-Phishing-Emails
+# Log-based Anomaly Detection and Tracing back to Phishing Emails
 ## First Part of this Project
 * https://github.com/chieh0613/Attack-Emulation-of-the-Fore-Part-of-Doppelpaymer-Attack-Chain
 
