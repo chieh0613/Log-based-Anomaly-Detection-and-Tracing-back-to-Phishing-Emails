@@ -3,21 +3,21 @@
 * https://github.com/chieh0613/Attack-Emulation-of-the-Fore-Part-of-Doppelpaymer-Attack-Chain
 
 ## Introduction
-    In the first part, we try to reproduce the attack scenario based on the fore part of Doppelpaymer attack chain.
-    The techniques used in their attack may include phishing emails.
-    Since it is hard to detect this kind of attack behavior with antivirus, 
-    finding other detection method is an essential issue currently.
-    We propose a log-based framwork and use machine learning methods to solve this problem.
+   In the first part, we try to reproduce the attack scenario based on the fore part of Doppelpaymer attack chain.
+   The techniques used in their attack may include phishing emails.
+   Since it is hard to detect this kind of attack behavior with antivirus, 
+   finding other detection method is an essential issue currently.
+   We propose a log-based framwork and use machine learning methods to solve this problem.
 
 ## Framework
-    First, we dump the logs from ELK. They are system logs and network logs respectively.
-    These two kinds of log will be put into two machine learning models.
-    Finally, the models will send suspicious logs and traceback to the source log.
+   First, we dump the logs from ELK. They are system logs and network logs respectively.
+   These two kinds of log will be put into two machine learning models.
+   Finally, the models will send suspicious logs and traceback to the source log.
    ![image](https://github.com/chieh0613/Log-based-Anomaly-Detection-and-Tracing-back-to-Phishing-Emails/blob/main/framework.png)
 
 
 ## Detection from system log
-    We use supervised machine learning method to detect suspicious system activities from windows security logs and sysmon logs.
+   We use supervised machine learning method to detect suspicious system activities from windows security logs and sysmon logs.
 * System_train.py: 
     * Read system logs which contains normal and attack logs.
     * Do detection to find abnormal behaviors
@@ -25,7 +25,7 @@
 * system_detection.py: Return the suspicious log
 
 ## Detection from network log
-    We use anomaly detection to detect suspicious network activities from conn.log.
+   We use anomaly detection to detect suspicious network activities from conn.log.
 * Network_train.py
     * Read connection logs which contains normal and attack logs
     * Do anomaly detection to find abnormal network flow
@@ -36,8 +36,8 @@
     * Match sysmon logs with event id 3 and security logs with event id 5156 in function relation.
 
 ## Traceback
-    Our goal is tracing back to the email link or attachment rule from the suspicious logs. Besides, it can also find out all the logs produced during the attack and visualize the detection result.
-    We will use database as our data structure because it is easier to manage and it's also effective.
+   Our goal is tracing back to the email link or attachment rule from the suspicious logs. Besides, it can also find out all the logs produced during the attack and visualize the detection result.
+   We will use database as our data structure because it is easier to manage and it's also effective.
 * Trace_back.py: Trace back to the source log and find all the logs associated with the attack.
 * Log_mix.db: A database that store the log information.
 * Trace_graph: A folder that store all the attack chain graph.
