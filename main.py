@@ -167,7 +167,7 @@ import threading
 import queue
 import load
 import prediction
-import prediction_supervised
+import system_prediction
 import sqlite3
 import trace_back
 #from graphviz import Digraph
@@ -179,7 +179,7 @@ import trace_back
 
 
 def system(x_test, out_queue):
-    system_idx = prediction_supervised.predict(x_test)
+    system_idx = system_prediction.predict(x_test)
     out_queue.put(system_idx)
 
 def network(conn, true_anomaly, network_model,out_queue):
