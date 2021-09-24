@@ -13,7 +13,7 @@
     First, we dump the logs from ELK. They are system logs and network logs respectively.
     These two kinds of log will be put into two machine learning models.
     Finally, the models will send suspicious logs and traceback to the source log.
-    ![image](https://github.com/chieh0613/Log-based-Anomaly-Detection-and-Tracing-back-to-Phishing-Emails/blob/main/framework.png)
+   ![image](https://github.com/chieh0613/Log-based-Anomaly-Detection-and-Tracing-back-to-Phishing-Emails/blob/main/framework.png)
 
 
 ## Detection from system log
